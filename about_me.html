@@ -3,217 +3,262 @@
     <head>
         <meta charset="UTF-8">
         <title>About me</title>
+        <style>
+            img{width:300px; height:200px}
+            a{text-decoration: none; color: black;}
+            a:hover{color: gray;}
+        </style>
     </head>
     <body>
-        <h1>About me</h1>
-        <hr>
-        <p>안녕하세요. 명지전문대 컴퓨터 공학과를 재학 중인 3학년 권오겸입니다. <br>
-            오늘도 좋은 하루 보내세요.
-        </p>
+        <header>
+            <h1>About me</h1>
+            <hr>
+            <p>안녕하세요. 명지전문대 컴퓨터 공학과를 재학 중인 3학년 권오겸입니다. <br>
+                오늘도 좋은 하루 보내세요.
+            </p>
+            <audio src="src/mp3/about_me_voice.mp3" controls>오디오 파일 없음</audio>
+        </header>
+        <br>
+        <br>        
+        <!----------------------------------------------->
+        <nav>
+            <h1 id="about_me/chapter_list">목차</h1>
+            <ul>
+                <li>
+                    <a href="#about_me/chapter1">관심 분야</a>
+                </li>
+                <li>
+                    <a href="#about_me/chapter2">취미 활동</a>
+                </li>
+                <li>
+                    <a href="#about_me/chapter3 ">강의 시간표</a>
+                </li>
+            </ul>
+        </nav>
         <br>
         <br>
         <!----------------------------------------------->
-        <h1>관심분야</h1>
-        <hr>
-        <ul>
-            <li>
-                AI
+        <section>
+            <!----------------------------------------------->
+            <article>
+                <h1 id="about_me/chapter1">관심분야</h1>
+                <hr>
                 <ul>
-                    <li>머신 러닝</li>
-                    <li>딥러닝</li>
-                    <li>신경망</li>
+                    <li>
+                        AI
+                        <ul>
+                            <li>머신 러닝</li>
+                            <li>딥러닝</li>
+                            <li>신경망</li>
+                        </ul>
+                    </li>
+                    <li>
+                        모바일프로그래밍
+                        <ul>
+                            <li>안드로이드 환경 개발 구축</li>
+                            <li>JAVA</li>
+                            <li>Kotlin</li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-            <li>
-                모바일프로그래밍
-                <ul>
-                    <li>안드로이드 환경 개발 구축</li>
-                    <li>JAVA</li>
-                    <li>Kotlin</li>
-                </ul>
-            </li>
-        </ul>
+            </article>
+            <br>
+            <br>
+            <!----------------------------------------------->
+            <article>
+                <h1 id="about_me/chapter2">취미 활동</h1>
+                <hr>
+                <table border="1" style="text-align:center">
+                    <tbody>
+                        <tr>
+                            <td><img src="src/img/pc.jpg" alt="pc게임 환경 사진"></td>
+                            <td><img src="src/img/sing.jpg" alt="노래방 사진"></td>
+                            <td><img src="src/img/book.png" alt="소설 사진"></td>
+                        </tr>
+                        <tr>
+                            <td>PC게임</td>
+                            <td>노래</td>  
+                            <td>소설 읽기</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <br>
+            <br>
+            <!----------------------------------------------->
+            <article>
+                <h1 id="about_me/chapter3">강의 시간표(2025년1학기)</h1>
+                <hr>
+                <table border="1" style="text-align:center">
+                    <thead>
+                        <tr>
+                            <th>교시</th>
+                            <th>시작 시간</th>
+                            <th width="150">월</th>
+                            <th width="150">화</th>
+                            <th width="150">수</th>
+                            <th width="150">목</th>
+                            <th width="150">금</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0.5</td>
+                            <td>09:00</td>
+                            <td></td><!--월-->
+                            <td></td><!--화-->
+                            <td></td><!--수-->
+                            <td></td><!--목-->
+                            <td></td><!--금-->
+                        </tr>
+                        <tr>
+                            <td>1.0</td>
+                            <td>09:25</td>
+                            <td></td><!--월-->
+                            <td></td><!--화-->
+                            <td></td><!--수-->
+                            <td rowspan="6">
+                                웹프로그래밍실습<br>
+                                공 614
+                            </td><!--목-->
+                            <td></td><!--금-->
+                        </tr>
+                        <tr>
+                            <td>1.5</td>
+                            <td>10:00</td>
+                            <td></td><!--월-->
+                            <td rowspan="6">
+                                운영체제<br>
+                                공 508
+                            </td><!--화-->
+                            <td rowspan="6">
+                                캡스톤디자인<br>
+                                공 601
+                            </td><!--수-->
+                            <td></td><!--금-->
+                        </tr>
+                        <tr>
+                            <td>2.0</td>
+                            <td>10:25</td>
+                            <td></td><!--월-->
+                            <td></td><!--금-->
+                        </tr>
+                        <tr>
+                            <td>2.5</td>
+                            <td>11:00</td>
+                            <td></td><!--월-->
+                            <td></td><!--금-->
+                        </tr>
+                        <tr>
+                            <td>3.0</td>
+                            <td>11:25</td>
+                            <td></td><!--월-->
+                            <td></td><!--금-->
+                        </tr>
+                        <tr>
+                            <td>3.5</td>
+                            <td>12:00</td>
+                            <td></td><!--월-->
+                            <td></td><!--금-->
+                        </tr>
+                        <tr>
+                            <td>4.0</td>
+                            <td>12:25</td>
+                            <td></td><!--월-->
+                            <td></td><!--목-->
+                            <td></td><!--금-->
+                        </tr>
+                        <tr>
+                            <td>4.5</td>
+                            <td>13:00</td>
+                            <td></td><!--월-->
+                            <td></td><!--화-->
+                            <td></td><!--수-->
+                            <td></td><!--목-->
+                            <td></td><!--금-->
+                        </tr>
+                        <tr>
+                            <td>5.0</td>
+                            <td>13:25</td>
+                            <td></td><!--월-->
+                            <td></td><!--화-->
+                            <td></td><!--수-->
+                            <td></td><!--목-->
+                            <td></td><!--금-->
+                        </tr>
+                        <tr>
+                            <td>5.5</td>
+                            <td>14:00</td>
+                            <td rowspan="6">
+                                융합게임제작실습<br>
+                                공 601
+                            </td><!--월-->
+                            <td rowspan="6">
+                                모바일프로그래밍<br>
+                                응용<br>
+                                공 612
+                            </td><!--화-->
+                            <td rowspan="6">
+                                데이터통신<br>
+                                공 608
+                            </td><!--수-->
+                            <td rowspan="6">
+                                인터넷콘텐츠<br>
+                                공 615
+                            </td><!--목-->
+                            <td></td><!--금-->
+                        </tr>
+                        <tr>
+                            <td>6.0</td>
+                            <td>14:25</td>
+                            <td></td><!--금-->
+                        </tr>
+                        <tr>
+                            <td>6.5</td>
+                            <td>15:00</td>
+                            <td></td><!--금-->
+                        </tr>
+                        <tr>
+                            <td>7.0</td>
+                            <td>15:25</td>
+                            <td></td><!--금-->
+                        </tr>
+                        <tr>
+                            <td>7.5</td>
+                            <td>16:00</td>
+                            <td></td><!--금-->
+                        </tr>
+                        <tr>
+                            <td>8.0</td>
+                            <td>16:25</td>
+                            <td></td><!--금-->
+                        </tr>
+                        <tr>
+                            <td>8.5</td>
+                            <td>17:00</td>
+                            <td></td><!--월-->
+                            <td></td><!--화-->
+                            <td></td><!--수-->
+                            <td></td><!--목-->
+                            <td></td><!--금-->
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <br>
+            <br>
+            <!----------------------------------------------->
+        </section>
         <br>
         <br>
         <!----------------------------------------------->
-        <h1>취미 활동</h1>
-        <hr>
-        <table border="1" style="text-align:center">
-            <tbody>
-                <tr>
-                    <td width="100" height="100"><img width="300" height="200" src="src/img/pc.jpg" alt="pc게임 환경 사진"></td>
-                    <td width="200" height="100"><img width="300" height="200" src="src/img/sing.jpg" alt="노래방 사진"></td>
-                    <td width="200" height="100"><img width="300" height="200" src="src/img/book.png" alt="소설 사진"></td>
-                </tr>
-                <tr>
-                    <td>PC게임</td>
-                    <td>노래</td>  
-                    <td>소설 읽기</td>
-                </tr>
-            </tbody>
-        </table>
+        <footer>
+            <hr>
+            <br>
+            <a href="#about_me/chapter_list">목차로 돌아가기</a>
+            <p>2025년 03월 20일 (목) 작성</p>
+        </footer>
         <br>
         <br>
-        <!----------------------------------------------->
-        <h1>강의 시간표(2025년1학기)</h1>
-        <hr>
-        <table border="1" style="text-align:center">
-            <thead>
-                <tr>
-                    <th>교시</th>
-                    <th>시작 시간</th>
-                    <th width="150">월</th>
-                    <th width="150">화</th>
-                    <th width="150">수</th>
-                    <th width="150">목</th>
-                    <th width="150">금</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>0.5</td>
-                    <td>09:00</td>
-                    <td></td><!--월-->
-                    <td></td><!--화-->
-                    <td></td><!--수-->
-                    <td></td><!--목-->
-                    <td></td><!--금-->
-                </tr>
-                <tr>
-                    <td>1.0</td>
-                    <td>09:25</td>
-                    <td></td><!--월-->
-                    <td></td><!--화-->
-                    <td></td><!--수-->
-                    <td rowspan="6">
-                        웹프로그래밍실습<br>
-                        공 614
-                    </td><!--목-->
-                    <td></td><!--금-->
-                </tr>
-                <tr>
-                    <td>1.5</td>
-                    <td>10:00</td>
-                    <td></td><!--월-->
-                    <td rowspan="6">
-                        운영체제<br>
-                        공 508
-                    </td><!--화-->
-                    <td rowspan="6">
-                        캡스톤디자인<br>
-                        공 601
-                    </td><!--수-->
-                    <td></td><!--금-->
-                </tr>
-                <tr>
-                    <td>2.0</td>
-                    <td>10:25</td>
-                    <td></td><!--월-->
-                    <td></td><!--금-->
-                </tr>
-                <tr>
-                    <td>2.5</td>
-                    <td>11:00</td>
-                    <td></td><!--월-->
-                    <td></td><!--금-->
-                </tr>
-                <tr>
-                    <td>3.0</td>
-                    <td>11:25</td>
-                    <td></td><!--월-->
-                    <td></td><!--금-->
-                </tr>
-                <tr>
-                    <td>3.5</td>
-                    <td>12:00</td>
-                    <td></td><!--월-->
-                    <td></td><!--금-->
-                </tr>
-                <tr>
-                    <td>4.0</td>
-                    <td>12:25</td>
-                    <td></td><!--월-->
-                    <td></td><!--목-->
-                    <td></td><!--금-->
-                </tr>
-                <tr>
-                    <td>4.5</td>
-                    <td>13:00</td>
-                    <td></td><!--월-->
-                    <td></td><!--화-->
-                    <td></td><!--수-->
-                    <td></td><!--목-->
-                    <td></td><!--금-->
-                </tr>
-                <tr>
-                    <td>5.0</td>
-                    <td>13:25</td>
-                    <td></td><!--월-->
-                    <td></td><!--화-->
-                    <td></td><!--수-->
-                    <td></td><!--목-->
-                    <td></td><!--금-->
-                </tr>
-                <tr>
-                    <td>5.5</td>
-                    <td>14:00</td>
-                    <td rowspan="6">
-                        융합게임제작실습<br>
-                        공 601
-                    </td><!--월-->
-                    <td rowspan="6">
-                        모바일프로그래밍<br>
-                        응용<br>
-                        공 612
-                    </td><!--화-->
-                    <td rowspan="6">
-                        데이터통신<br>
-                        공 608
-                    </td><!--수-->
-                    <td rowspan="6">
-                        인터넷콘텐츠<br>
-                        공 615
-                    </td><!--목-->
-                    <td></td><!--금-->
-                </tr>
-                <tr>
-                    <td>6.0</td>
-                    <td>14:25</td>
-                    <td></td><!--금-->
-                </tr>
-                <tr>
-                    <td>6.5</td>
-                    <td>15:00</td>
-                    <td></td><!--금-->
-                </tr>
-                <tr>
-                    <td>7.0</td>
-                    <td>15:25</td>
-                    <td></td><!--금-->
-                </tr>
-                <tr>
-                    <td>7.5</td>
-                    <td>16:00</td>
-                    <td></td><!--금-->
-                </tr>
-                <tr>
-                    <td>8.0</td>
-                    <td>16:25</td>
-                    <td></td><!--금-->
-                </tr>
-                <tr>
-                    <td>8.5</td>
-                    <td>17:00</td>
-                    <td></td><!--월-->
-                    <td></td><!--화-->
-                    <td></td><!--수-->
-                    <td></td><!--목-->
-                    <td></td><!--금-->
-                </tr>
-                
-            </tbody>
-        </table>
-        <br>
-        <a href="index.html">목차로 돌아가기</a>
     </body>
 </html>
